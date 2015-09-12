@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="searchApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- Bootstrap latest css[THIS IS REQUIRED IF YOU DON'T HAVE QUANTUMUI PRO SKIN]-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Light package of effect.css It is optional -->
+    <link rel="stylesheet" href="bower_components/quantumui/styles/effect-light.min.css">
+    <!-- Latest compiled and minified CSS on head of your page -->
+    <link rel="stylesheet" href="bower_components/quantumui/dist/css/quantumui.min.css">
+    <!-- VENDORS -->
+    <!-- Required for Datepicker Component -->
+    <script src="bower_components/moment/min/moment.min.js"></script>
+
+    <!-- ANGULARS -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <!-- QuantumUI -->
+    <script src="bower_components/quantumui/dist/js/quantumui-nojq.min.js"></script>
+    <script src="bower_components/quantumui/dist/js/quantumui.min.js"></script>
+
+
+    <script type="text/javascript" src="app.js"></script>
+    <link media="all" rel="stylesheet" href="main.css" type="text/css"/>
+
+
+</head>
+<body ng-controller="searchCtrl">
+<button type="button" data-nq-select="" class="btn form-control" ng-options="name as name.Name for name in names" data-qo-placeholder="Мой поиск!" data-ng-model="dasha">
+</button>
+
+
+
+      <!--<div ng-repeat="name in names | filter:startQuery(dasha)">-->
+          <!--<ul class="main-menu">-->
+              <!--<li>-->
+
+                  <!--<a class='link' href='#'>{{name["Name"]}} </a>-->
+              <!--</li>-->
+
+
+<!--</ul>-->
+      <!--</div>-->
+  <!-- -->
+
+
+</body>
+</html>
